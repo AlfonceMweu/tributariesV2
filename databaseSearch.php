@@ -1,5 +1,5 @@
 <?php 
-include("localConfig.php");
+include("config.php");
 $data = json_decode(file_get_contents('php://input'), true);
 $name = $data['name'];
 $stmt = $db->query("SELECT * FROM bio_data where name like ('$name%');");
