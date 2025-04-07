@@ -34,14 +34,15 @@
 <script>
   loaderContainer.style.display = "block";
   loader.style.display = "block";
-  let randomNumber = Math.floor(Math.random() * 10000) + 1;
-  let randomUser = "AnonymousUser"+randomNumber;
+  
+
   window.addEventListener('load', (event) => {
     loaderContainer.style.display = "none";
     loader.style.display = "none";
   });
   
   let searchQuery = document.getElementById("searchBtn");
+
   submitBtn.onclick = function(){
     loaderContainer.style.display = "block";
     loader.style.display = "block";  
@@ -71,6 +72,7 @@
         let popup = document.getElementById('popup');
         popupContainer.style.display="grid";
         popup.style.display="grid";
+        document.body.style.overflow = "hidden";
         popup.innerHTML = `
         <button id="exitBtn"><i class="fa fa-close"></i></button>
         <center><h2 class="infoTitle">${formattedData.name}</h2></center>
@@ -116,6 +118,7 @@
         exitBtn.onclick = function(){
           popupContainer.style.display="none";
           popup.style.display="none";
+          document.body.style.overflow = "";
         }
       }
     })
@@ -146,6 +149,7 @@ try {
   .then(data => {
     loaderContainer.style.display = "none";
     loader.style.display = "none";
+    document.body.style.overflow = "hidden";
     if(data.knowledgeGraph === undefined ||   data.knowledgeGraph.attributes['Born'] === undefined){
       window.alert("There is no knowledge graph for the person");
     }
@@ -238,6 +242,7 @@ try {
     let popup = document.getElementById('popup');
     popupContainer.style.display="grid";
     popup.style.display="grid";
+    document.body.style.overflow = "hidden";
       popup.innerHTML = `
     <button id="exitBtn"><i class="fa fa-close"></i></button>
     <center><h2 class="infoTitle">${infoTitle}</h2></center>
@@ -311,8 +316,9 @@ try {
     
   }
     exitBtn.onclick = function(){
-      popupContainer.style.display="none";
+    popupContainer.style.display="none";
     popup.style.display="none";
+    document.body.style.overflow = "";
     window.location.reload();
     } 
   })
@@ -449,6 +455,7 @@ fetch("bioData.php")
     viewMore.onclick = function(){
     popupContainer.style.display="grid";
     popup.style.display="grid";
+    document.body.style.overflow = "hidden";
     popup.innerHTML = `
     <button id="exitBtn"><i class="fa fa-close"></i></button>
     <center><h2 class="infoTitle">${item.name}</h2></center>
@@ -494,6 +501,7 @@ fetch("bioData.php")
     exitBtn.onclick = function(){
     popupContainer.style.display="none";
     popup.style.display="none";
+    document.body.style.overflow = "";
   } 
   } 
         
