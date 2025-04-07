@@ -433,8 +433,10 @@ table tr:nth-child(even){
     .commentPopup{
         top: 40vh;
         height: 60vh;
-        width: 94vw;
-        left: 3vw;
+        width: 98vw;
+        left: 1vw;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
         padding-bottom: 2vh; 
         animation: 1s slideUp linear;
     }
