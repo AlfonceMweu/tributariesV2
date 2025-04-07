@@ -123,6 +123,7 @@ body::-webkit-scrollbar{
     margin-top: 2vh;
     font-weight: 500;
     border-color: #051726;
+    outline: none;
 }
 .submitBtn{
     width: auto;
@@ -399,7 +400,9 @@ table tr:nth-child(even){
     font-family: Libre Baskerville, Arial, Tahoma, sans-serif;
 }
 .userComment{
-    width: 100%;
+    width: 90%;
+    height: auto;
+    display: block;
     font-size: 0.8rem;
     color: rgb(230, 229, 229);
     font-family: "Ubuntu", Arial, Tahoma, sans-serif;
