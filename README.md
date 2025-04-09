@@ -60,7 +60,7 @@ CONTENT DOCUMENTATION The following images were used: 1.https://media.gettyimage
 
 3.https://media.gettyimages.com/id/1350722246/photo/server-room-background.jpg?s=612x612&w=0&k=20&c=f6CoZ-PmbMo5zCsRPAP9B4tdwS8yvkSKBnCfC3GRmqU=
 
-DEPLOYMENT The project has been deployed using vercel since it intergrates seamlessly with Github.The preview URL is https://tributaries.vercel.app GUIDE:
+DEPLOYMENT The project has been deployed using vercel since it intergrates seamlessly with Github.The preview URL is https://tributariesv2.onrender.com/index.html GUIDE:
 
 1.Sign up or login to vercel.com
 
