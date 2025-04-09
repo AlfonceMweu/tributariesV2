@@ -22,7 +22,7 @@ TECHNOLOGIES USED:
 
 INSTALLATION GUIDE
 
-1.Clone the repository: git clone https://github.com/AlfonceMweu/tribute-webpage.git
+1.Clone the repository: git clone https://github.com/AlfonceMweu/tributariesV2
 
 2.Open the project in your preffered code editor.
 
